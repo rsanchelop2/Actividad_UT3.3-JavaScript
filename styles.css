@@ -1,0 +1,15 @@
+a {
+    background-color: rgb(123, 224, 224);
+    padding: 1vh;
+    border-radius: 5vw;
+    color: black;
+    margin: 0.5vw;
+}
+div {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+body {
+    justify-content: center;
+}
