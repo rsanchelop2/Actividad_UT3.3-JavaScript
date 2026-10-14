@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Números primos del 1 al 100</title>
 </head>
 <body>
     <a href="../index.html">Inicio</a>
 
-    <script>
-        function calcularPrimos(){
-            for (let index = 1; index <= 100; index++) {
-                
-                if (index % 2 == 0){
-                    console.log(index)
+    <script >
+        function calcularPrimos() {
+            for (let numero = 2; numero <= 100; numero++) {
+                let esPrimo = true;
+
+                for (let divisor = 2; divisor <= Math.sqrt(numero); divisor++) {
+                    if (numero % divisor === 0) {
+                        esPrimo = false;
+                        break;
+                    }
                 }
-                
-                
+
+                if (esPrimo) {
+                    console.log(numero);
+                }
             }
         }
+
         calcularPrimos();
     </script>
 </body>
